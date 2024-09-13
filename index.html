@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petition Guard - Secure Your Petitions</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">Petition <span>Guard</span></div>
+        <ul class="nav-links">
+            <li><a href="#intro">Introduction</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#notifications">Notifications</a></li>
+            <li><a href="#security">Security</a></li>
+            <li><a href="#petition">Submit Petition</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Introduction Section -->
+    <section id="intro" class="section intro">
+        <div class="content">
+            <h1>Welcome to <span>Petition Guard</span></h1>
+            <p>An advanced solution to protect petitions using encryption, secure storage, and access control.</p>
+            <button class="cta">Learn More</button>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="section features">
+        <h2>Protecting User Petitions</h2>
+        <div class="features-container">
+            <div class="feature-box">
+                <h3>Encryption</h3>
+                <p>Advanced encryption ensures only authorized individuals can access sensitive information.</p>
+            </div>
+            <div class="feature-box">
+                <h3>Secure Storage</h3>
+                <p>Petitions are stored in secure servers, preventing unauthorized access and breaches.</p>
+            </div>
+            <div class="feature-box">
+                <h3>Access Control</h3>
+                <p>Role-based access control limits petition visibility based on permissions.</p>
+            </div>
+            <div class="feature-box">
+                <h3>Auditing</h3>
+                <p>Detailed logs maintain transparency and accountability for actions on petitions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Notification System Section -->
+    <section id="notifications" class="section notifications">
+        <h2>Notification System for Petition Viewing</h2>
+        <div class="notifications-container">
+            <div class="notification-box">
+                <h3>Real-time Notifications</h3>
+                <p>Users receive instant notifications when their petitions are accessed by authorized individuals.</p>
+            </div>
+            <div class="notification-box">
+                <h3>Detailed Information</h3>
+                <p>Notifications provide details such as time, date, and user accessing the petition.</p>
+            </div>
+            <div class="notification-box">
+                <h3>Personalized Updates</h3>
+                <p>Customize notification settings for personalized alerts and updates.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security Section -->
+    <section id="security" class="section security">
+        <h2>Ensuring Petition Confidentiality</h2>
+        <div class="security-container">
+            <div class="security-box">
+                <h3>Data Masking</h3>
+                <p>Sensitive data is masked or anonymized to protect user privacy.</p>
+            </div>
+            <div class="security-box">
+                <h3>Data Encryption</h3>
+                <p>All data is encrypted at rest and in transit, ensuring confidentiality.</p>
+            </div>
+            <div class="security-box">
+                <h3>Access Logs</h3>
+                <p>Track all actions taken on petitions with detailed access logs.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Petition Submission Section -->
+    <section id="petition" class="section petition">
+        <h2>Submit a Petition</h2>
+        <form id="petition-form" class="petition-form">
+            <label for="petition-title">Petition Title</label>
+            <input type="text" id="petition-title" name="title" placeholder="Enter the petition title" required>
+
+            <label for="petition-description">Petition Description</label>
+            <textarea id="petition-description" name="description" placeholder="Describe the petition in detail" required></textarea>
+
+            <label for="petition-type">Petition Type</label>
+            <select id="petition-type" name="type" required>
+                <option value="public">Public</option>
+                <option value="private">Private</option>
+            </select>
+
+            <label for="user-email">Your Email</label>
+            <input type="email" id="user-email" name="email" placeholder="Enter your email" required>
+
+            <button type="submit" class="cta submit-btn">Submit Petition</button>
+        </form>
+        <div id="form-response"></div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <h2>Contact Us</h2>
+        <p>For any inquiries, feel free to reach out:</p>
+        <ul>
+            <li>Email: youremail@freepik.com</li>
+            <li>Phone: +91 620 421 838</li>
+            <li>Website: <a href="#">yourcompany.com</a></li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Petition Guard by DynamoDEV. All rights reserved.</p>
+    </footer>
+</body>
+</html>

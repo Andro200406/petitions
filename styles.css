@@ -1,0 +1,209 @@
+/* Global styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #282c34;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    color: #f0a500;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #f45d48;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f0a500;
+}
+
+.section {
+    padding: 100px 50px;
+    text-align: center;
+    background: #ffffff;
+    margin: 20px 0;
+}
+
+.section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #f45d48;
+}
+
+.intro {
+    background-color: #282c34;
+    color: white;
+    padding: 150px 50px;
+}
+
+.intro h1 {
+    font-size: 3rem;
+    color: #f0a500;
+}
+
+.intro h1 span {
+    color: #f45d48;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.features-container, .notifications-container, .security-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.feature-box, .notification-box, .security-box {
+    background-color: #f0f0f5;
+    padding: 25px;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-box:hover, .notification-box:hover, .security-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #f45d48;
+    margin-bottom: 15px;
+}
+
+.cta {
+    padding: 15px 30px;
+    background-color: #f45d48;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta:hover {
+    background-color: #f67263;
+    transform: scale(1.05);
+}
+
+.contact {
+    background-color: #282c34;
+    color: white;
+}
+
+.contact a {
+    color: #f0a500;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    color: #f45d48;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1c1e22;
+    color: white;
+    font-size: 0.9rem;
+}
+
+/* Petition form styling */
+.petition {
+    background-color: #f4f7f6;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.petition-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.petition-form label {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.petition-form input,
+.petition-form textarea,
+.petition-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.petition-form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.petition-form .submit-btn {
+    background-color: #f45d48;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.petition-form .submit-btn:hover {
+    background-color: #f67263;
+}
+
+#form-response {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    color: #28a745;
+}
