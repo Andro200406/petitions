@@ -114,6 +114,27 @@
         </form>
         <div id="form-response"></div>
     </section>
+    <section id="">
+        <div class="container_1">
+            <h1>Encrypte or Decrypt Your Data</h1>
+            <div class="section_1">
+                <label for="shift">Shift:</label>
+                <input type="number" id="shift" value="3">
+            </div>
+            <div class="section_1">
+                <label for="text">Text:</label>
+                <textarea id="text" rows="9" cols="50"></textarea>
+            </div>
+            <div class="section_1">
+                <button onclick="encrypt()">Encrypt</button>
+                <button onclick="decrypt()">Decrypt</button>
+            </div>
+            <div class="section_1">
+                <label for="result">Result:</label>
+                <textarea id="result" rows="9" cols="50" readonly></textarea>
+            </div>
+        </div>
+    </section>
 
     <!-- Contact Section -->
     <section id="contact" class="section contact">

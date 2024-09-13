@@ -72,3 +72,32 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+function shiftChar(char, shift) {
+    const base = char >= 'a' && char <= 'z' ? 'a' : char >= 'A' && char <= 'Z' ? 'A' : null;
+    if (!base) return char;
+
+    const baseCode = base.charCodeAt(0);
+    const charCode = char.charCodeAt(0);
+    const newCharCode = ((charCode - baseCode + shift) % 26 + 26) % 26 + baseCode;
+
+    return String.fromCharCode(newCharCode);
+}
+
+function caesarCipher(text, shift) {
+    return text.split('').map(char => shiftChar(char, shift)).join('');
+}
+
+function encrypt() {
+    const shift = parseInt(document.getElementById('shift').value, 10);
+    const text = document.getElementById('text').value;
+    const encryptedText = caesarCipher(text, shift);
+    document.getElementById('result').value = encryptedText;
+}
+
+function decrypt() {
+    const shift = parseInt(document.getElementById('shift').value, 10);
+    const text = document.getElementById('text').value;
+    const decryptedText = caesarCipher(text, -shift);
+    document.getElementById('result').value = decryptedText;
+}
